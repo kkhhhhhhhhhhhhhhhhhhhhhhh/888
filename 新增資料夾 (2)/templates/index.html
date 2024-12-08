@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}關於我們 - 台南歪嘴矯正中心{% endblock %}</title>
+    <style>
+        /* Apply background image to the body */
+        .with-background {
+            background-image: url(/static/A9180A76-C98D-431A-A0A3-5011F885481F.jpg); /* Adjust the path if necessary */
+            background-size: cover; /* Ensures the image covers the entire viewport */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center center; /* Centers the image */
+            min-height: 100vh; /* Ensures the body takes up the full viewport height */
+            margin: 0;
+            font-family: Arial, sans-serif; /* Example font, adjust as needed */
+        }
+
+        /* Additional styles for readability */
+        header, footer, main {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px; /* Limits the content width */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 15px;
+        }
+
+        footer p {
+            text-align: center;
+            color: #666;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p, ul {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body class="with-background">
+    <header>
+        <nav>
+            <a href="{{ url_for('home') }}">首頁</a>
+            <a href="{{ url_for('about') }}">醫師介紹</a>
+            <a href="{{ url_for('contact') }}">聯繫我們</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>關於台南歪嘴矯正中心</h1>
+            <p>
+                台南歪嘴矯正中心致力於提供專業、細心的牙科與臉部矯正服務。我們的團隊由經驗豐富的矯正醫師領軍，
+                採用最新的醫療技術和設備，幫助患者解決因咬合不正或臉部不對稱引起的問題，重拾自信笑容。
+            </p>
+            <h2>我們的專業</h2>
+            <ul>
+                <li>歪嘴矯正治療</li>
+                <li>咬合不正調整</li>
+                <li>隱形牙套設計</li>
+                <li>下巴後縮與顏面對稱矯正</li>
+            </ul>
+            <h2>我們的使命</h2>
+            <p>
+                幫助每位患者找到最適合的矯正方案，以達到健康與美觀兼具的效果。
+                我們深信每個人都應該擁有展現自信笑容的權利，無論是成人還是兒童。
+            </p>
+            <h2>聯絡我們</h2>
+            <p>
+                地址: 台南市中西區成功路 123 號<br>
+                電話: 06-123-4567<br>
+                電子郵件: info@correctsmile.com
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 台南歪嘴矯正中心</p>
+    </footer>
+</body>
+</html>
+
